@@ -1,7 +1,9 @@
+
+
 {
   "Header": {
-    "title": "We are a Landing Page",
-    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sed commodo nibh ante facilisis bibendum."
+    "title": "Bienvenido",
+    "paragraph": "Un lugar para quedarse y nunca irse... Un lugar para quedarse y nunca irse...Un lugar para quedarse y nunca irse...Un lugar para quedarse y nunca irse...Un lugar para quedarse y nunca irse...Un lugar para quedarse y nunca irse...Un lugar para quedarse y nunca irse...Un lugar para quedarse y nunca irse...v"
   },
   "About": {
     "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -67,32 +69,32 @@
   ],
   "Services": [
     {
-      "icon": "fa fa-wordpress",
+      "icon": "img/iconos/1.svg",
       "name": "Lorem ipsum dolor",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
     },
     {
-      "icon": "fa fa-cart-arrow-down",
+      "icon": "img/iconos/2.svg",
       "name": "Consectetur adipiscing",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
     },
     {
-      "icon": "fa fa-cloud-download",
+      "icon": "img/iconos/3.svg",
       "name": "Lorem ipsum dolor",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
     },
     {
-      "icon": "fa fa-language",
+      "icon": "img/iconos/4.svg",
       "name": "Consectetur adipiscing",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
     },
     {
-      "icon": "fa fa-plane",
+      "icon": "img/iconos/5.svg",
       "name": "Lorem ipsum dolor",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
     },
     {
-      "icon": "fa fa-pie-chart",
+      "icon": "img/iconos/6.svg",
       "name": "Consectetur adipiscing",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
     }
@@ -152,8 +154,8 @@
     }
   ],
   "Contact": {
-    "address": "4321 California St, San Francisco, CA 12345 ",
-    "phone": "+1 123 456 1234",
+    "address": "Posadas, Misiones ",
+    "phone": "543764673216",
     "email": "info@company.com",
     "facebook": "fb.com",
     "twitter": "twitter.com",

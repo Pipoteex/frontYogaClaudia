@@ -93,9 +93,9 @@ hr {
   color: #555;
   font-size: 15px;
   font-weight: 400;
-  padding: 8px 2px;
+  padding: 0px 0px;
   border-radius: 0;
-  margin: 9px 20px 0;
+  margin: 0;
 }
 #menu.navbar-default .navbar-nav > li > a:after {
   display: block;
@@ -208,7 +208,7 @@ a:focus,
   display: table;
   width: 100%;
   padding: 0;
-  background: url(../img/intro-bg.jpg) center center no-repeat;
+  background: url(../img/imagenYoga.jpg) center center no-repeat;
   background-color: #e5e5e5;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -310,7 +310,7 @@ header .intro-text {
 /* Services Section */
 #services {
   padding: 100px 0;
-  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(246,217,150,1) 0%, rgba(242,232,211,1) 89%);
   color: #fff;
 }
 #services .service-desc {
@@ -460,7 +460,7 @@ header .intro-text {
 /* Contact Section */
 #contact {
   padding: 100px 0 60px;
-  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+  background: linear-gradient(270deg, rgba(2,0,36,1) 0%, rgba(207,156,140,1) 0%, rgba(185,129,111,1) 89%);
   color: rgba(255, 255, 255, 0.75);
 }
 #contact .section-title {

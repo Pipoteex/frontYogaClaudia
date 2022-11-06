@@ -1,4 +1,4 @@
-export const About = (props) => {
+export const AboutComision = (props) => {
   return (
     <div id="about">
       <div className="container">
@@ -9,7 +9,7 @@ export const About = (props) => {
           </div>
           <div className="col-xs-12 col-md-6">
             <div className="about-text">
-              <h2>Sobre nosotros</h2>
+              <h2>Comisión Misionera de Yoga</h2>
               <p>{props.data ? props.data.paragraph : "loading..."}</p>
               <h3>Porque escojernos?</h3>
               <div className="list-style">
