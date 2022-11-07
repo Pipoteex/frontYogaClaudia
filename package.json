@@ -1,7 +1,7 @@
 {
   "name": "landingpage-react-template",
   "private": true,
-  "homepage": "http://Pipoteex.github.io/front-yoga",
+  "homepage": "http://institutosolnaciente.online",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -25,7 +25,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build",
+    "predeploy": "npm run build && echo institutosolnaciente.online > ./build/CNAME",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
