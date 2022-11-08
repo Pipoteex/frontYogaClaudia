@@ -1,5 +1,17 @@
 import { useState } from 'react'
 import emailjs from 'emailjs-com'
+import styled from 'styled-components'  
+
+const StyledImg = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  img{
+    width: 50%;
+    border-radius: 150px;
+  }
+`
+
 
 const initialState = {
   name: '',
@@ -37,9 +49,9 @@ export const Contact = (props) => {
       <div id='contact'>
         <div className='container'>
           <div className='col-md-8'>
-            <div className='row'>
-              aca va algo
-            </div>
+            <StyledImg className='row'>
+              <img src="img/imagenYoga.jpg" alt="yoga" />
+            </StyledImg>
           </div>
           <div className='col-md-3 col-md-offset-1 contact-info'>
             <div className='contact-item'>

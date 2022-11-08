@@ -29,7 +29,6 @@ const StyledMainWelcome = styled.div`
 `
 
 const StyledWelcomeMessage = styled(Animated)`
-    /* width: 50%; */
     font-size: 4vw;
     padding: 20px;
     position: absolute;
@@ -37,8 +36,9 @@ const StyledWelcomeMessage = styled(Animated)`
     text-align: center;
     font-family: "Raleway", sans-serif;
     border-radius: 10px;
-    left: 260;
-    top: 0;
+    /* left: 260;
+    top: 0; */
+    max-width: 50%;
     text-shadow: -2px 2px 18px rgba(255,255,255,0.49);
 `
 
@@ -51,22 +51,22 @@ const StyledLogoImage = styled.div`
 
 const imagesList = [
     {
-        url: "img/12.jpeg",
-        mensaje: "FUERZA",
-        entrada: "bounceInLeft",
-        style: { top:"100", right: "0" }
-    },
-    {
-        url: "img/23.jpeg",
-        mensaje: "ESPIRITU",
-        entrada: "bounceInRight",
-        style: { top:"150", right: "40" }
-    },
-    {
-        url: "img/3.jpeg",
-        mensaje: "VITALIDAD",
+        url: "img/yoga1.jpg",
+        mensaje: "Practicar yoga: un habito saludable",
         entrada: "fadeIn",
-        style: { top:"40", right: "20" }
+        style: { left: "5%", top: "40%" }
+    },
+    {
+        url: "img/yoga2.jpg",
+        mensaje: "Un estilo de vida",
+        entrada: "fadeIn",
+        style: { left: "10%", top: "55%" }
+    },
+    {
+        url: "img/yoga3.jpg",
+        mensaje: "Yoga para un cambio saludable",
+        entrada: "fadeIn",
+        style: { left: "55%", top: "45%" }
     }
 ]
 

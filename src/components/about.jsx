@@ -1,3 +1,5 @@
+import icono2 from "../iconos/b.svg"
+
 export const About = (props) => {
   return (
     <div id="about">
@@ -5,7 +7,7 @@ export const About = (props) => {
         <div className="row">
           <div className="col-xs-12 col-md-6">
             {" "}
-            <img src="img/InstituoSolNacienteLogo.jpg" className="img-responsive" alt="" />{" "}
+            <img src={ icono2 } className="img-responsive" alt="" />{" "}
           </div>
           <div className="col-xs-12 col-md-6">
             <div className="about-text">

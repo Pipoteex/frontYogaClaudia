@@ -6,7 +6,7 @@
     "paragraph": "Un lugar para quedarse y nunca irse... Un lugar para quedarse y nunca irse...Un lugar para quedarse y nunca irse...Un lugar para quedarse y nunca irse...Un lugar para quedarse y nunca irse...Un lugar para quedarse y nunca irse...Un lugar para quedarse y nunca irse...Un lugar para quedarse y nunca irse...v"
   },
   "About": {
-    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "paragraph": "Fundado en el año 2004 con la misión de difundir las enseñanzas y prácticas del Yoga a todos los estratos sociales, independiente de su edad, religión, economía o condición social. Trabajamos en comunidad, aprendizaje, y acompañamiento constante. Enfatizamos el desarrollo y crecimiento del ser, a nivel físico, mental, emocional y espiritual.",
     "Why": [
       "Lorem ipsum dolor",
       "Tempor incididunt",
@@ -70,33 +70,33 @@
   "Services": [
     {
       "icon": "img/iconos/1.svg",
-      "name": "Lorem ipsum dolor",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "name": "Yoga deportivo",
+      "text": "La mejor practica para atletas. Se basa en dominar la flexibilidad, el equilibrio y la fuerza, más la correcta respiración, concentración, ritmo y enganches"
     },
     {
       "icon": "img/iconos/2.svg",
-      "name": "Consectetur adipiscing",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "name": "Yoga terapéutico",
+      "text": "Una práctica que se ajusta a tus dolencias, lesiones y patologías. Se adaptan las practicas a las particularidades morfológicas, patológicas y/o psicoemocionales de cada practicante."
     },
     {
       "icon": "img/iconos/3.svg",
-      "name": "Lorem ipsum dolor",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "name": "Yoga adultos",
+      "text": "No permitas que la edad te limite, la constancia potenciara tu energía y bienestar. Su práctica es recomendada para todas las edades, tan solo las adaptamos a la fuerza y movilidad de cada uno."
     },
     {
       "icon": "img/iconos/4.svg",
-      "name": "Consectetur adipiscing",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "name": "Hatha yoga",
+      "text": "La mejor opción para tener una práctica más pausada y equilibrar cuerpo y mente. Combina el ejercicio físico, con técnicas de respiración y meditación. "
     },
     {
       "icon": "img/iconos/5.svg",
-      "name": "Lorem ipsum dolor",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "name": "Yoga niños",
+      "text": "La unión del juego y la relajación para niños. Se fomentan los buenos hábitos a la hora de sentarse, estudiar, caminar, etc. Por lo que, por medio de su práctica, favorecerá al niño en su rutina diaria."
     },
     {
       "icon": "img/iconos/6.svg",
-      "name": "Consectetur adipiscing",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "name": "Yoga fitness",
+      "text": "Conjuga fuerza, equilibrio y resistencia. Recomendable para aquellos que deseen mayor intensidad. Combina secuencias de asanas con ejercicios tradicionales para ganar flexibilidad, resistencia y equilibrio, fortalecer la musculatura y tonificar."
     }
   ],
   "Testimonials": [
