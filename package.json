@@ -1,7 +1,7 @@
 {
   "name": "landingpage-react-template",
   "private": true,
-  "homepage": "http://institutosolnaciente.online",
+  "homepage": "http://institutosolnaciente.com.ar",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -25,7 +25,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build && echo institutosolnaciente.online > ./build/CNAME",
+    "predeploy": "npm run build && echo institutosolnaciente.com.ar > ./build/CNAME",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
