@@ -9,35 +9,36 @@ import JsonData from "./data/data.json";
 import SmoothScroll from "smooth-scroll";
 import "./App.css";
 import { NavBar } from "./components/navBar";
-import 'animate.css';
+import "animate.css";
 import { Welcome } from "./components/welcome";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css";
+import { News } from "./components/news";
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
-  speed: 1000,
-  speedAsDuration: true,
+    speed: 1000,
+    speedAsDuration: true,
 });
 
 const App = () => {
-  const [landingPageData, setLandingPageData] = useState({});
-  useEffect(() => {
-    setLandingPageData(JsonData);
-  }, []);
+    const [landingPageData, setLandingPageData] = useState({});
+    useEffect(() => {
+        setLandingPageData(JsonData);
+    }, []);
 
-  const first = useRef()
+    const first = useRef();
 
-  return (
-    <div>
-      <NavBar primer={ first } />
-      <Welcome data={landingPageData.Header} />
-      <About data={landingPageData.About} />
-      <Services ref={ first } data={landingPageData.Services} />
-      <Gallery data={landingPageData.Gallery}/>
-      <Testimonials data={landingPageData.Testimonials} />
-      <Team data={landingPageData.Team} />
-      <Contact data={landingPageData.Contact} />
-    </div>
-  );
+    return (
+        <div>
+            <NavBar primer={first} />
+            <Welcome data={landingPageData.Header} />
+            <About data={landingPageData.About} />
+            <Services ref={first} data={landingPageData.Services} />
+            <Gallery data={landingPageData.Gallery} />
+            <News data={landingPageData.News} />
+            <Team data={landingPageData.Team} />
+            <Contact data={landingPageData.Contact} />
+        </div>
+    );
 };
 
 export default App;

@@ -1,12 +1,16 @@
 import { Image } from "./image";
 
-export const Gallery = (props) => {
+export const News = (props) => {
     return (
-        <div id="galeria" className="text-center">
+        <div
+            id="news"
+            className="text-center"
+            style={{ background: "rgb(239, 243, 243)", margin: "20px 0px" }}
+        >
             <div className="container">
                 <div className="section-title" style={{ margin: "30px 0px" }}>
-                    <h2>Galeria de imagenes</h2>
-                    <p>Algunas imagenes de nuestro dia a dia.</p>
+                    <h2>Novedades 2023</h2>
+                    {/* <p>Algunas imagenes de nuestro dia a dia.</p> */}
                 </div>
                 <div className="row">
                     <div className="portfolio-items">
