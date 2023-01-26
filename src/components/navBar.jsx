@@ -14,7 +14,7 @@ const StyledNavBar = styled.div`
     background-color: transparent;
     @media screen and (max-width: 450px) {
         & {
-            height: 60px;
+            height: 50px;
         }
     }
 `;
@@ -37,7 +37,7 @@ const StyledLogo = styled.div`
     color: white;
     @media screen and (max-width: 450px) {
         & {
-            font-size: 20px;
+            font-size: 15px;
         }
     }
 `;
