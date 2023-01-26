@@ -11,7 +11,12 @@ const StyledNavBar = styled.div`
     width: 100%;
     height: 80px;
     z-index: 200;
-    background-color: transparent; /* #fef3f1 */
+    background-color: transparent;
+    @media screen and (max-width: 450px) {
+        & {
+            height: 60px;
+        }
+    }
 `;
 
 const StyledNavBarHeader = styled.div`
@@ -30,6 +35,11 @@ const StyledLogo = styled.div`
     margin-left: 20px;
     font-size: 3vw;
     color: white;
+    @media screen and (max-width: 450px) {
+        & {
+            font-size: 20px;
+        }
+    }
 `;
 
 const StyledBarsIcon = styled.div`
@@ -55,9 +65,14 @@ const StyledItem = styled.div`
     cursor: pointer;
     font-family: "Raleway", sans-serif;
     color: #fef3f1;
-    font-size: 2vw;
+    font-size: 1.5vw;
     &:hover {
         text-decoration: underline;
+    }
+    @media screen and (max-width: 450px) {
+        & {
+            font-size: 20px;
+        }
     }
 `;
 
@@ -77,7 +92,9 @@ export const NavBar = (props) => {
             <StyledNavBarHeader
                 style={viewItems ? { borderBottom: "2px solid #fef3f1" } : {}}
             >
-                <StyledLogo>Instituto Sol Naciente</StyledLogo>
+                <StyledLogo name="welcome" onClick={handleOnClick}>
+                    Instituto Sol Naciente
+                </StyledLogo>
                 <StyledBarsIcon onClick={() => setViewItems(!viewItems)}>
                     {viewItems ? (
                         <Across style={{ maxWidth: "30px" }}></Across>

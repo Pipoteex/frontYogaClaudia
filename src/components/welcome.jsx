@@ -13,15 +13,17 @@ const StyledMainWelcome = styled.div`
     background-color: white;
     background-image: white;
     transition: all 1s;
+    width: 100vw;
     img {
-        width: 100vw;
+        width: 100%;
+        /* min-width: 100vw; */
         transition: all 1s;
         opacity: 0;
-        max-height: 100vh;
+        /* min-height: 100vh; */
     }
     &.algo {
         img {
-            width: 100vw;
+            width: 100%;
             opacity: 1;
         }
     }
@@ -90,7 +92,7 @@ export const Welcome = () => {
     };
 
     return (
-        <StyledMainWelcome className={flag ? "algo" : ""}>
+        <StyledMainWelcome className={flag ? "algo" : ""} id={"welcome"}>
             <img
                 src={imagesList[url].url}
                 alt="asas"
