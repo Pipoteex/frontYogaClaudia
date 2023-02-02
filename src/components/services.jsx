@@ -1,15 +1,4 @@
-import icono1 from "../iconos/a.svg";
-import icono2 from "../iconos/b.svg";
-import icono3 from "../iconos/c.svg";
-import icono4 from "../iconos/d.svg";
-import icono5 from "../iconos/e.svg";
-import icono6 from "../iconos/f.svg";
-import icono7 from "../iconos/g.svg";
-import icono8 from "../iconos/h.svg";
-
 import styled from "styled-components";
-
-let newArray = [icono1, icono2, icono3, icono4, icono5, icono6, icono7, icono8];
 
 const StyledIconService = styled.div`
     /* background: white; */
@@ -36,8 +25,7 @@ export const Services = (props) => {
                         ? props.data.map((d, i) => (
                               <div key={`${d.name}-${i}`} className="col-md-4">
                                   <StyledIconService>
-                                      {" "}
-                                      <img src={newArray[i]} alt="hola" />{" "}
+                                      <img src={d.icon} alt="hola" />{" "}
                                   </StyledIconService>
                                   <div className="service-desc">
                                       <h3>{d.name}</h3>

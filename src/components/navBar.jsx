@@ -5,6 +5,7 @@ import { ReactComponent as Bars } from "./icons/bars.svg";
 import { ReactComponent as Across } from "./icons/across.svg";
 import { Animated } from "react-animated-css";
 import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 
 const StyledNavBar = styled.div`
     position: fixed;
@@ -79,16 +80,15 @@ const StyledItem = styled.div`
 export const NavBar = (props) => {
     const [viewItems, setViewItems] = useState(false);
 
-    const navigation = useNavigate();
-
     const handleOnClick = (event) => {
         document
             .querySelector(`#${event.target.getAttribute("name")}`)
             .scrollIntoView({ behavior: "smooth" });
+        setViewItems(false);
     };
 
     return (
-        <StyledNavBar>
+        <StyledNavBar id="mainNavBar">
             <StyledNavBarHeader
                 style={viewItems ? { borderBottom: "2px solid #fef3f1" } : {}}
             >
@@ -97,9 +97,15 @@ export const NavBar = (props) => {
                 </StyledLogo>
                 <StyledBarsIcon onClick={() => setViewItems(!viewItems)}>
                     {viewItems ? (
-                        <Across style={{ maxWidth: "30px" }}></Across>
+                        <Across
+                            className="iconNavBar"
+                            style={{ maxWidth: "30px" }}
+                        ></Across>
                     ) : (
-                        <Bars style={{ maxWidth: "30px" }}></Bars>
+                        <Bars
+                            className="iconNavBar"
+                            style={{ maxWidth: "30px" }}
+                        ></Bars>
                     )}
                 </StyledBarsIcon>
             </StyledNavBarHeader>

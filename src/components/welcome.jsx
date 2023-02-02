@@ -57,7 +57,7 @@ const imagesList = [
     {
         url: "img/foto5.jpeg",
         mensaje:
-            "No podemos hacerlo por nuestra cuenta se necesita de una comunidad para cultivar Buenos hábitos.",
+            "No podemos hacerlo por nuestra cuenta, se necesita de una comunidad para cultivar buenos hábitos.",
         entrada: "fadeIn",
         style: { left: "0%", top: "70%" },
     },
