@@ -5,17 +5,12 @@
     },
     "About": {
         "paragraph": "Fundado en el año 2004 con la misión de difundir las enseñanzas y prácticas del Yoga a todos los estratos sociales, independiente de su edad, religión, economía o condición social. Trabajamos en comunidad, aprendizaje, y acompañamiento constante. Enfatizamos el desarrollo y crecimiento del ser, a nivel físico, mental, emocional y espiritual.",
-        "Why": [
-            "Lorem ipsum dolor",
-            "Tempor incididunt",
-            "Lorem ipsum dolor",
-            "Incididunt ut labore"
-        ],
+        "Why": ["Responsabilidad", "Profesionalismo", "Pasión", "Compromiso"],
         "Why2": [
-            "Aliquip ex ea commodo",
-            "Lorem ipsum dolor",
-            "Exercitation ullamco",
-            "Lorem ipsum dolor"
+            "Humildad",
+            "Equilibrio",
+            "Acompañamiento",
+            "Logro de objetivos"
         ]
     },
     "News": [
