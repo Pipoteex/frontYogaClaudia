@@ -38,7 +38,7 @@ const StyledLogo = styled.div`
     color: white;
     @media screen and (max-width: 450px) {
         & {
-            font-size: 15px;
+            font-size: 19px;
         }
     }
 `;
@@ -72,7 +72,7 @@ const StyledItem = styled.div`
     }
     @media screen and (max-width: 450px) {
         & {
-            font-size: 20px;
+            font-size: 18px;
         }
     }
 `;
