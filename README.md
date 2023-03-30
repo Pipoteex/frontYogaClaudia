@@ -1,1 +1,1 @@
-Proyecto React Yoga
+Proyecto React Yoga Claudia

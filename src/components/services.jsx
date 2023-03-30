@@ -3,14 +3,14 @@ import styled from "styled-components";
 const StyledIconService = styled.div`
     /* background: white; */
     border-radius: 90px;
-    height: 131px;
+    /* height: 131px; */
     display: flex;
     justify-content: center;
     img {
         background: white;
-        padding: 20px;
-        width: 50%;
+        width: 90%;
         border-radius: 30px;
+        /* height: 90%; */
     }
 `;
 export const Services = (props) => {
@@ -18,7 +18,7 @@ export const Services = (props) => {
         <div id="services" className="text-center">
             <div className="container">
                 <div className="section-title" style={{ margin: "30px 0px" }}>
-                    <h2>Nuestros servicios</h2>
+                    <h2>WorkShop</h2>
                 </div>
                 <div className="row">
                     {props.data

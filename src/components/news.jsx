@@ -12,24 +12,13 @@ export const News = (props) => {
                     <h2>Novedades 2023</h2>
                     {/* <p>Algunas imagenes de nuestro dia a dia.</p> */}
                 </div>
-                <div className="row">
-                    <div className="portfolio-items">
-                        {props.data
-                            ? props.data.map((d, i) => (
-                                  <div
-                                      key={`${d.title}-${i}`}
-                                      className="col-sm-6 col-md-4 col-lg-4"
-                                  >
-                                      <Image
-                                          title={d.title}
-                                          largeImage={d.largeImage}
-                                          smallImage={d.smallImage}
-                                      />
-                                  </div>
-                              ))
-                            : "Loading..."}
-                    </div>
-                </div>
+
+                <iframe
+                    src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FArgentina%2FBuenos_Aires&src=Z2VybmFuZG9sZWl2YTk0QGdtYWlsLmNvbQ&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=ZXMuYXIjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%237986CB&color=%2333B679&color=%230B8043"
+                    style={{ width: "800", height: "600", border: "0" }}
+                    frameborder="0"
+                    scrolling="no"
+                ></iframe>
             </div>
         </div>
     );

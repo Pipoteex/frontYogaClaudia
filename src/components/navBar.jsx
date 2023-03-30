@@ -4,8 +4,6 @@ import styled from "styled-components";
 import { ReactComponent as Bars } from "./icons/bars.svg";
 import { ReactComponent as Across } from "./icons/across.svg";
 import { Animated } from "react-animated-css";
-import { useNavigate } from "react-router-dom";
-import { useEffect } from "react";
 
 const StyledNavBar = styled.div`
     position: fixed;
@@ -22,10 +20,10 @@ const StyledNavBar = styled.div`
 
 const StyledNavBarHeader = styled.div`
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
+    background: #f9f8f3;
 `;
 
 const StyledLogo = styled.div`
@@ -54,18 +52,16 @@ const StyledBarsIcon = styled.div`
 `;
 
 const StyledItemsContainer = styled.div`
-    padding: 20px;
     background-color: #fef3f1;
     display: flex;
-    flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.4);
+    background: #f9f8f3;
 `;
 
 const StyledItem = styled.div`
     padding: 20px;
     cursor: pointer;
     font-family: "Raleway", sans-serif;
-    color: #fef3f1;
+    color: black;
     font-size: 1.5vw;
     &:hover {
         text-decoration: underline;
@@ -88,14 +84,34 @@ export const NavBar = (props) => {
     };
 
     return (
-        <StyledNavBar id="mainNavBar">
+        <StyledNavBar
+            id="mainNavBar"
+            className="animate__animated animate__fadeIn animate__delay-2s 5s"
+        >
             <StyledNavBarHeader
                 style={viewItems ? { borderBottom: "2px solid #fef3f1" } : {}}
             >
-                <StyledLogo name="welcome" onClick={handleOnClick}>
-                    Instituto Sol Naciente
-                </StyledLogo>
-                <StyledBarsIcon onClick={() => setViewItems(!viewItems)}>
+                <StyledItemsContainer>
+                    <StyledItem name="about" onClick={handleOnClick}>
+                        Biografía
+                    </StyledItem>
+                    <StyledItem name="services" onClick={handleOnClick}>
+                        Yoga
+                    </StyledItem>
+                    <StyledItem name="galeria" onClick={handleOnClick}>
+                        WorkShop
+                    </StyledItem>
+                    <StyledItem name="news" onClick={handleOnClick}>
+                        Agenda
+                    </StyledItem>
+                    <StyledItem name="equipo" onClick={handleOnClick}>
+                        Cangorosa
+                    </StyledItem>
+                    <StyledItem name="contact" onClick={handleOnClick}>
+                        Contacto
+                    </StyledItem>
+                </StyledItemsContainer>
+                {/* <StyledBarsIcon onClick={() => setViewItems(!viewItems)}>
                     {viewItems ? (
                         <Across
                             className="iconNavBar"
@@ -107,7 +123,7 @@ export const NavBar = (props) => {
                             style={{ maxWidth: "30px" }}
                         ></Bars>
                     )}
-                </StyledBarsIcon>
+                </StyledBarsIcon> */}
             </StyledNavBarHeader>
 
             {viewItems ? (

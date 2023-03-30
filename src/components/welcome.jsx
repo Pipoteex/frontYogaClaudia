@@ -7,32 +7,30 @@ import { useEffect } from "react";
 
 const StyledMainWelcome = styled.div`
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    position: relative;
     background-color: white;
     background-image: white;
     transition: all 1s;
     width: 100vw;
-    img {
+    height: 100vh;
+    background: #f9f8f3;
+    /* img {
         width: 100%;
-        /* min-width: 100vw; */
         transition: all 1s;
         opacity: 0;
-        /* min-height: 100vh; */
     }
     &.algo {
         img {
             width: 100%;
             opacity: 1;
         }
-    }
+    } */
 `;
 
 const StyledWelcomeMessage = styled(Animated)`
     font-size: 3vw;
     padding: 20px;
-    position: absolute;
     color: white;
     text-align: center;
     font-family: "Raleway", sans-serif;
@@ -42,35 +40,18 @@ const StyledWelcomeMessage = styled(Animated)`
 
 const imagesList = [
     {
-        url: "img/foto8.jpeg",
-        mensaje:
-            "No importa lo profundo que llegue a una postura, lo que importa es quién eres cuando llegas allí.",
+        url: "img/logo/logoClaudia.jpeg",
+        mensaje: "Claudia Martinez ",
         entrada: "fadeIn",
-        style: { left: "60%", top: "30%", maxWidth: "50vw" },
-    },
-    {
-        url: "img/foto4.jpeg",
-        mensaje: "Deja que la mente se calme y el corazón se abra.",
-        entrada: "fadeIn",
-        style: { left: "15%", top: "80%" },
-    },
-    {
-        url: "img/foto5.jpeg",
-        mensaje:
-            "No podemos hacerlo por nuestra cuenta, se necesita de una comunidad para cultivar buenos hábitos.",
-        entrada: "fadeIn",
-        style: { left: "0%", top: "70%" },
+        style: {},
     },
 ];
 
 export const Welcome = () => {
-    const [url, setUrl] = useState(0);
     const [flag, setFlag] = useState(false);
-    const [mensaje, setMensaje] = useState(imagesList[0].mensaje);
-    const [flagMensaje, setFlagMensaje] = useState(false);
 
     useEffect(() => {
-        const intervalo = setInterval(() => {
+        /* const intervalo = setInterval(() => {
             setFlag(false);
             setFlagMensaje(false);
             setTimeout(() => {
@@ -80,32 +61,33 @@ export const Welcome = () => {
 
         return () => {
             clearInterval(intervalo);
-        };
+        }; */
     }, []);
 
-    const aparecerMensaje = () => {
+    /* const aparecerMensaje = () => {
         setFlag(true);
         setTimeout(() => {
             setMensaje(imagesList[url].mensaje);
             setFlagMensaje(true);
         }, 1500);
-    };
+    }; */
 
     return (
         <StyledMainWelcome className={flag ? "algo" : ""} id={"welcome"}>
             <img
-                src={imagesList[url].url}
+                src={imagesList[0].url}
                 alt="asas"
-                onLoad={() => aparecerMensaje()}
+                className="animate__animated animate__fadeIn animate__delay-1s 2s"
+                style={{ width: "800px" }}
             />
-            <StyledWelcomeMessage
+            {/* <StyledWelcomeMessage
                 animationIn={imagesList[url].entrada}
                 animationOut="fadeOut"
                 isVisible={flagMensaje}
-                style={imagesList[url].style}
+                style={imagesList[0].style}
             >
                 {mensaje}
-            </StyledWelcomeMessage>
+            </StyledWelcomeMessage> */}
         </StyledMainWelcome>
     );
 };

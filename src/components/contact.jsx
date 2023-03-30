@@ -82,7 +82,7 @@ export const Contact = (props) => {
             </div>
             <div id="footer">
                 <div className="container text-center">
-                    <p>&copy; 2022 Instituto Sol Naciente :)</p>
+                    <p>&copy; 2023 Claudia Martinez :)</p>
                 </div>
             </div>
         </div>

@@ -1,36 +1,38 @@
 export const Team = (props) => {
     return (
-        <div id="equipo" className="text-center">
+        <div id="equipo" /* className="text-center" */>
             <div className="container">
-                <div className="col-md-8 col-md-offset-2 section-title">
-                    <h2>Conoce al equipo</h2>
+                <div
+                    style={{
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                    }}
+                >
+                    <img
+                        src="img/cangorosa/cangorosa1.jpeg"
+                        style={{ width: "50%" }}
+                        alt=""
+                        srcset=""
+                    />
+                    <img
+                        src="img/cangorosa/cangorosa2.jpeg"
+                        alt=""
+                        srcset=""
+                        style={{ width: "50%" }}
+                    />
                 </div>
-                <div id="row">
-                    {props.data
-                        ? props.data.map((d, i) => (
-                              <div
-                                  key={`${d.name}-${i}`}
-                                  className="col-md-3 col-sm-6 team"
-                              >
-                                  <div
-                                      className="thumbnail"
-                                      style={{ border: "none" }}
-                                  >
-                                      {" "}
-                                      <img
-                                          src={d.img}
-                                          alt="..."
-                                          className="team-img"
-                                          style={{ maxHeight: "300px" }}
-                                      />
-                                      <div className="caption">
-                                          <h4>{d.name}</h4>
-                                          <p>{d.job}</p>
-                                      </div>
-                                  </div>
-                              </div>
-                          ))
-                        : "loading"}
+                <div
+                    style={{
+                        fontSize: "30px",
+                        marginBottom: "40px",
+                        textAlign: "center",
+                    }}
+                >
+                    Establecimiento o lugar en el que se preparan medicamentos
+                    de forma artesanal y se venden. "a través de la biblioteca
+                    se pueden conocer los experimentos que los monjes jerónimos
+                    realizaban en la botica del monasterio"
                 </div>
             </div>
         </div>
