@@ -10,7 +10,6 @@ export const News = (props) => {
             <div className="container">
                 <div className="section-title" style={{ margin: "30px 0px" }}>
                     <h2>Novedades 2023</h2>
-                    {/* <p>Algunas imagenes de nuestro dia a dia.</p> */}
                 </div>
 
                 <iframe

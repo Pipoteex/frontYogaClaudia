@@ -33,85 +33,71 @@
     "Gallery": [
         {
             "title": "",
-            "largeImage": "img/portfolio/01.jpeg",
-            "smallImage": "img/portfolio/01.jpeg"
+            "largeImage": "img/gallery/g1.jpeg",
+            "smallImage": "img/gallery/g1.jpeg"
         },
         {
             "title": "",
-            "largeImage": "img/portfolio/02.jpeg",
-            "smallImage": "img/portfolio/02.jpeg"
+            "largeImage": "img/gallery/g2.jpeg",
+            "smallImage": "img/gallery/g2.jpeg"
         },
         {
             "title": "",
-            "largeImage": "img/portfolio/03.jpeg",
-            "smallImage": "img/portfolio/03.jpeg"
+            "largeImage": "img/gallery/g3.jpeg",
+            "smallImage": "img/gallery/g3.jpeg"
         },
         {
             "title": "",
-            "largeImage": "img/portfolio/04.jpeg",
-            "smallImage": "img/portfolio/04.jpeg"
+            "largeImage": "img/gallery/g4.jpeg",
+            "smallImage": "img/gallery/g4.jpeg"
         },
         {
             "title": "",
-            "largeImage": "img/portfolio/05.jpeg",
-            "smallImage": "img/portfolio/05.jpeg"
+            "largeImage": "img/gallery/g5.jpeg",
+            "smallImage": "img/gallery/g5.jpeg"
         },
         {
             "title": "",
-            "largeImage": "img/portfolio/06.jpeg",
-            "smallImage": "img/portfolio/06.jpeg"
-        },
-        {
-            "title": "",
-            "largeImage": "img/portfolio/07.jpeg",
-            "smallImage": "img/portfolio/07.jpeg"
-        },
-        {
-            "title": "",
-            "largeImage": "img/portfolio/08.jpeg",
-            "smallImage": "img/portfolio/08.jpeg"
-        },
-        {
-            "title": "",
-            "largeImage": "img/portfolio/09.jpeg",
-            "smallImage": "img/portfolio/09.jpeg"
-        },
-        {
-            "title": "",
-            "largeImage": "img/portfolio/11.jpeg",
-            "smallImage": "img/portfolio/11.jpeg"
+            "largeImage": "img/gallery/g6.jpeg",
+            "smallImage": "img/gallery/g6.jpeg"
         },
 
         {
             "title": "",
-            "largeImage": "img/portfolio/12.jpeg",
-            "smallImage": "img/portfolio/12.jpeg"
+            "largeImage": "img/gallery/g8.jpeg",
+            "smallImage": "img/gallery/g8.jpeg"
         },
 
         {
             "title": "",
-            "largeImage": "img/portfolio/13.jpeg",
-            "smallImage": "img/portfolio/13.jpeg"
+            "largeImage": "img/gallery/g11.jpeg",
+            "smallImage": "img/gallery/g11.jpeg"
+        },
+
+        {
+            "title": "",
+            "largeImage": "img/gallery/g12.jpeg",
+            "smallImage": "img/gallery/g12.jpeg"
         }
     ],
     "Services": [
         {
-            "icon": "img/workshop/yoga2.jpeg",
+            "icon": "img/icons/1.svg",
             "name": "Evolucionando al estrés :Mindfulness.",
             "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\""
         },
         {
-            "icon": "img/workshop/yoga2.jpeg",
+            "icon": "img/icons/2.svg",
             "name": "Reiki .Títulos oficiales de la Alianza Argentina de Reikistas",
             "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\""
         },
         {
-            "icon": "img/workshop/yoga2.jpeg",
+            "icon": "img/icons/3.svg",
             "name": "Gemoterapia y las energías del cuerpo.",
             "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\""
         },
         {
-            "icon": "img/workshop/yoga2.jpeg",
+            "icon": "img/icons/4.svg",
             "name": "Curso de Tarot Junguiano: sendero introspectivo.",
             "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\""
         }

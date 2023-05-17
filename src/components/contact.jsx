@@ -5,8 +5,8 @@ const StyledImg = styled.div`
     display: flex;
     justify-content: center;
     img {
-        width: 70%;
-        border-radius: 20%;
+        width: 60%;
+        border-radius: 50%;
     }
 `;
 
@@ -17,12 +17,17 @@ export const Contact = (props) => {
                 <div className="container">
                     <div className="col-md-8">
                         <StyledImg className="row">
-                            <img src="img/imagenYoga.jpg" alt="yoga" />
+                            <img src="img/logo/logoClaudia.jpeg" alt="yoga" />
                         </StyledImg>
                     </div>
-                    <div className="col-md-3 col-md-offset-1 contact-info">
+                    <div
+                        className="col-md-3 col-md-offset-1 contact-info"
+                        style={{ marginLeft: "0px" }}
+                    >
                         <div className="contact-item">
-                            <h3>Información de contacto</h3>
+                            <h3 style={{ fontSize: "25px" }}>
+                                Información de contacto
+                            </h3>
                             <p>
                                 <span>
                                     <i className="fa fa-map-marker"></i>{" "}
