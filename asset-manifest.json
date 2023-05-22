@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/frontYogaClaudia/static/css/main.0d382104.chunk.css",
-    "main.js": "/frontYogaClaudia/static/js/main.2cd77214.chunk.js",
-    "main.js.map": "/frontYogaClaudia/static/js/main.2cd77214.chunk.js.map",
+    "main.js": "/frontYogaClaudia/static/js/main.349773f2.chunk.js",
+    "main.js.map": "/frontYogaClaudia/static/js/main.349773f2.chunk.js.map",
     "runtime-main.js": "/frontYogaClaudia/static/js/runtime-main.7b81070d.js",
     "runtime-main.js.map": "/frontYogaClaudia/static/js/runtime-main.7b81070d.js.map",
     "static/css/2.100724b7.chunk.css": "/frontYogaClaudia/static/css/2.100724b7.chunk.css",
@@ -44,6 +44,6 @@
     "static/css/2.100724b7.chunk.css",
     "static/js/2.e4151611.chunk.js",
     "static/css/main.0d382104.chunk.css",
-    "static/js/main.2cd77214.chunk.js"
+    "static/js/main.349773f2.chunk.js"
   ]
 }
