@@ -33,7 +33,7 @@
     "Gallery": [
         {
             "title": "",
-            "largeImage": "img/gallery/g1.jpeg",
+            "largeImage": "/img/gallery/g1.jpeg",
             "smallImage": "img/gallery/g1.jpeg"
         },
         {

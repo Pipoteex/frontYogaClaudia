@@ -1,9 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import "react-animated-slider/build/horizontal.css";
-import { useState } from "react";
 import { Animated } from "react-animated-css";
-import { useEffect } from "react";
+import image from "../images/logo/logoClaudia.jpeg";
 
 const StyledMainWelcome = styled.div`
     display: flex;
@@ -15,17 +14,12 @@ const StyledMainWelcome = styled.div`
     width: 100vw;
     height: 100vh;
     background: #f9f8f3;
-    /* img {
+    img {
         width: 100%;
         transition: all 1s;
         opacity: 0;
+        max-width: 750px;
     }
-    &.algo {
-        img {
-            width: 100%;
-            opacity: 1;
-        }
-    } */
 `;
 
 const StyledWelcomeMessage = styled(Animated)`
@@ -40,7 +34,7 @@ const StyledWelcomeMessage = styled(Animated)`
 
 const imagesList = [
     {
-        url: "img/logo/logoClaudia.jpeg",
+        url: "./img/logo/logoClaudia.jpeg",
         mensaje: "Claudia Martinez ",
         entrada: "fadeIn",
         style: {},
@@ -48,46 +42,14 @@ const imagesList = [
 ];
 
 export const Welcome = () => {
-    const [flag, setFlag] = useState(false);
-
-    useEffect(() => {
-        /* const intervalo = setInterval(() => {
-            setFlag(false);
-            setFlagMensaje(false);
-            setTimeout(() => {
-                setUrl((url) => (url + 1 === imagesList.length ? 0 : url + 1));
-            }, 300);
-        }, 7000);
-
-        return () => {
-            clearInterval(intervalo);
-        }; */
-    }, []);
-
-    /* const aparecerMensaje = () => {
-        setFlag(true);
-        setTimeout(() => {
-            setMensaje(imagesList[url].mensaje);
-            setFlagMensaje(true);
-        }, 1500);
-    }; */
-
     return (
-        <StyledMainWelcome className={flag ? "algo" : ""} id={"welcome"}>
+        <StyledMainWelcome id={"welcome"}>
             <img
-                src={imagesList[0].url}
-                alt="asas"
+                src={image}
+                alt="Yoga Claudia Martinez"
                 className="animate__animated animate__fadeIn animate__delay-1s 2s"
-                style={{ width: "800px" }}
+                style={{ width: "100%" }}
             />
-            {/* <StyledWelcomeMessage
-                animationIn={imagesList[url].entrada}
-                animationOut="fadeOut"
-                isVisible={flagMensaje}
-                style={imagesList[0].style}
-            >
-                {mensaje}
-            </StyledWelcomeMessage> */}
         </StyledMainWelcome>
     );
 };

@@ -24,6 +24,12 @@ const StyledNavBarHeader = styled.div`
     align-items: center;
     height: 100%;
     background: #f9f8f3;
+    @media screen and (max-width: 800px) {
+        & {
+            font-size: 19px;
+        }
+        justify-content: end;
+    }
 `;
 
 const StyledLogo = styled.div`
@@ -41,32 +47,54 @@ const StyledLogo = styled.div`
     }
 `;
 
-const StyledBarsIcon = styled.div`
-    padding: 10px;
-    cursor: pointer;
-    margin-right: 20px;
-    svg {
-        width: 2.5vw;
-        fill: white;
-    }
-`;
-
 const StyledItemsContainer = styled.div`
     background-color: #fef3f1;
     display: flex;
     background: #f9f8f3;
+    @media screen and (max-width: 800px) {
+        display: none;
+    }
+`;
+
+const StyledItemsContainerTwo = styled.div`
+    background-color: #fef3f1;
+    display: flex;
+    flex-direction: column;
+    background: #f9f8f3;
+    /* border: 1px solid black; */
+    -webkit-box-shadow: 0px 10px 29px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 10px 29px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 10px 29px 0px rgba(0, 0, 0, 0.75);
+    @media screen and (min-width: 800px) {
+        display: none;
+    }
+`;
+
+const StyledBarsIcon = styled.div`
+    padding: 10px;
+    cursor: pointer;
+    margin-right: 10px;
+    display: none;
+    @media screen and (max-width: 800px) {
+        display: block;
+        svg {
+            width: 90px;
+            fill: black;
+            padding-top: 10px 0;
+        }
+    }
 `;
 
 const StyledItem = styled.div`
-    padding: 20px;
+    margin: 20px;
     cursor: pointer;
     font-family: "Raleway", sans-serif;
     color: black;
-    font-size: 1.5vw;
+    font-size: 25px;
     &:hover {
         text-decoration: underline;
     }
-    @media screen and (max-width: 450px) {
+    @media screen and (max-width: 800px) {
         & {
             font-size: 18px;
         }
@@ -79,7 +107,7 @@ export const NavBar = (props) => {
     const handleOnClick = (event) => {
         document
             .querySelector(`#${event.target.getAttribute("name")}`)
-            .scrollIntoView({ behavior: "smooth" });
+            .scrollIntoView({ behavior: "smooth", marginBottom: "500px" });
         setViewItems(false);
     };
 
@@ -96,10 +124,10 @@ export const NavBar = (props) => {
                         Biografía
                     </StyledItem>
                     <StyledItem name="services" onClick={handleOnClick}>
-                        Yoga
+                        WorkShop
                     </StyledItem>
                     <StyledItem name="galeria" onClick={handleOnClick}>
-                        WorkShop
+                        Galeria
                     </StyledItem>
                     <StyledItem name="news" onClick={handleOnClick}>
                         Agenda
@@ -111,7 +139,7 @@ export const NavBar = (props) => {
                         Contacto
                     </StyledItem>
                 </StyledItemsContainer>
-                {/* <StyledBarsIcon onClick={() => setViewItems(!viewItems)}>
+                <StyledBarsIcon onClick={() => setViewItems(!viewItems)}>
                     {viewItems ? (
                         <Across
                             className="iconNavBar"
@@ -120,10 +148,10 @@ export const NavBar = (props) => {
                     ) : (
                         <Bars
                             className="iconNavBar"
-                            style={{ maxWidth: "30px" }}
+                            style={{ maxWidth: "30px", fill: "black" }}
                         ></Bars>
                     )}
-                </StyledBarsIcon> */}
+                </StyledBarsIcon>
             </StyledNavBarHeader>
 
             {viewItems ? (
@@ -133,12 +161,12 @@ export const NavBar = (props) => {
                     animationOutDuration={400}
                     isVisible={viewItems}
                 >
-                    <StyledItemsContainer>
+                    <StyledItemsContainerTwo>
                         <StyledItem name="about" onClick={handleOnClick}>
                             Sobre nosotros
                         </StyledItem>
                         <StyledItem name="services" onClick={handleOnClick}>
-                            Servicios
+                            WorkShop
                         </StyledItem>
                         <StyledItem name="galeria" onClick={handleOnClick}>
                             Galeria
@@ -155,7 +183,7 @@ export const NavBar = (props) => {
                         {/* <StyledItem name="comision" onClick={ () => navigation("/comision_yoga") } >
                             Comisión Misionera de Yoga
                         </StyledItem> */}
-                    </StyledItemsContainer>
+                    </StyledItemsContainerTwo>
                 </Animated>
             ) : (
                 ""

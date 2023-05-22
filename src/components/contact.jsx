@@ -1,4 +1,7 @@
 import styled from "styled-components";
+import img1 from "../images/logo/logoClaudia.jpeg";
+import { ReactComponent as InstagramLogo } from "../images/icons/instagram.svg";
+import { ReactComponent as FacebookLogo } from "../images/icons/facebook.svg";
 
 const StyledImg = styled.div`
     width: 100%;
@@ -10,86 +13,88 @@ const StyledImg = styled.div`
     }
 `;
 
+const StyledBoxContact = styled.div`
+    display: grid;
+    grid-template-columns: auto auto;
+    @media screen and (max-width: 800px) {
+        grid-template-columns: auto;
+    }
+`;
+
+const StyledFooter = styled.div`
+    text-align: center;
+    font-size: 20px;
+    color: black;
+    background-color: #f9f8f3;
+    margin-top: 15px;
+`;
+
+const StyledInformation = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    min-height: 300px;
+    font-size: 20px;
+    @media screen and (max-width: 800px) {
+        align-items: center;
+        font-size: 16px;
+    }
+`;
+
 export const Contact = (props) => {
     return (
         <div>
-            <div id="contact">
-                <div className="container">
-                    <div className="col-md-8">
-                        <StyledImg className="row">
-                            <img src="img/logo/logoClaudia.jpeg" alt="yoga" />
-                        </StyledImg>
-                    </div>
-                    <div
-                        className="col-md-3 col-md-offset-1 contact-info"
-                        style={{ marginLeft: "0px" }}
-                    >
-                        <div className="contact-item">
-                            <h3 style={{ fontSize: "25px" }}>
-                                Información de contacto
-                            </h3>
-                            <p>
-                                <span>
-                                    <i className="fa fa-map-marker"></i>{" "}
-                                    Dirección
-                                </span>
-                                {props.data ? props.data.address : "loading"}
-                            </p>
-                        </div>
-                        <div className="contact-item">
-                            <p>
-                                <span>
-                                    <i className="fa fa-phone"></i> Teléfono
-                                </span>{" "}
-                                {props.data ? props.data.phone : "loading"}
-                            </p>
-                        </div>
-                        <div className="contact-item">
-                            <p>
-                                <span>
-                                    <i className="fa fa-envelope-o"></i> Email
-                                </span>{" "}
-                                {props.data ? props.data.email : "loading"}
-                            </p>
-                        </div>
-                    </div>
-                    <div className="col-md-12">
-                        <div className="row">
-                            <div className="social">
-                                <ul>
-                                    <li>
-                                        <a
-                                            href={
-                                                props.data
-                                                    ? props.data.facebook
-                                                    : "/"
-                                            }
-                                        >
-                                            <i className="fa fa-facebook"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a
-                                            href={
-                                                props.data
-                                                    ? props.data.instagram
-                                                    : "/"
-                                            }
-                                        >
-                                            <i className="fa fa-instagram"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div
+                style={{
+                    margin: "30px 0px",
+                    textAlign: "center",
+                    background: "#eff3f3",
+                }}
+                id="galeria"
+            >
+                <h2>Contacto</h2>
             </div>
-            <div id="footer">
-                <div className="container text-center">
-                    <p>&copy; 2023 Claudia Martinez :)</p>
-                </div>
-            </div>
+            <StyledBoxContact>
+                <StyledImg>
+                    <img src={img1} alt="yoga" />
+                </StyledImg>
+
+                <StyledInformation>
+                    <div>
+                        <div
+                            style={{
+                                fontSize: "26px",
+                                fontWeight: "500",
+                                marginBottom: "10px",
+                            }}
+                        >
+                            Información de contacto:
+                        </div>
+                        <div>
+                            <b>- Dirección:</b> Corrientes
+                        </div>
+                        <div>
+                            <b>- Teléfono:</b> 3764673216
+                        </div>
+                        <div
+                            style={{
+                                marginTop: "20px",
+                            }}
+                        >
+                            <InstagramLogo
+                                style={{ cursor: "pointer", margin: "10px" }}
+                            />
+
+                            <FacebookLogo
+                                style={{ cursor: "pointer", margin: "10px" }}
+                            />
+                        </div>
+                    </div>
+                </StyledInformation>
+            </StyledBoxContact>
+
+            <StyledFooter>2023 Claudia Martinez :)</StyledFooter>
         </div>
     );
 };

@@ -1,8 +1,9 @@
+import imagen from "../iconos/a.svg";
+
 export const Image = ({ title, largeImage, smallImage }) => {
     return (
         <div className="portfolio-item">
             <div className="hover-bg">
-                {" "}
                 <a
                     href={largeImage}
                     title={title}
@@ -12,11 +13,11 @@ export const Image = ({ title, largeImage, smallImage }) => {
                         <h4>{title}</h4>
                     </div>
                     <img
-                        src={smallImage}
+                        src={largeImage}
                         className="img-responsive"
                         alt={title}
-                    />{" "}
-                </a>{" "}
+                    />
+                </a>
             </div>
         </div>
     );

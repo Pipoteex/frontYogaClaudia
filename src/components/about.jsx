@@ -1,18 +1,31 @@
+import image from "../images/claudia_martinez.jpeg";
+import styled from "styled-components";
+
+const StyledImage = styled.img`
+    -webkit-box-shadow: 0px 10px 35px -15px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 10px 35px -15px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 10px 35px -15px rgba(0, 0, 0, 0.75);
+    width: 100%;
+    border-radius: 50px;
+`;
+
 export const About = (props) => {
     return (
-        <div id="about">
+        <div id="about" style={{ marginTop: "20px" }}>
             <div className="container">
                 <div className="row">
                     <div className="col-xs-12 col-md-6">
-                        {" "}
-                        <img
-                            src="./img/ClaudiaMartinez.jpeg"
+                        <StyledImage
+                            src={image}
                             className="img-responsive"
                             alt=""
-                        />{" "}
+                        />
                     </div>
                     <div className="col-xs-12 col-md-6">
-                        <div className="about-text">
+                        <div
+                            className="about-text"
+                            style={{ marginTop: "20px" }}
+                        >
                             <h2>Sobre mi...</h2>
                             <p>
                                 {props.data
