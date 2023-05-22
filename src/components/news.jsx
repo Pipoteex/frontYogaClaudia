@@ -8,7 +8,7 @@ export const News = (props) => {
             style={{ background: "rgb(239, 243, 243)", margin: "20px 0px" }}
         >
             <div className="container">
-                <div className="section-title" style={{ margin: "30px 0px" }}>
+                <div style={{ margin: "30px 0px" }}>
                     <h2>Cangorosa</h2>
                 </div>
 

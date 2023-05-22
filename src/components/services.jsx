@@ -23,10 +23,14 @@ const data = {
 };
 export const Services = (props) => {
     return (
-        <div id="services" className="text-center">
+        <div
+            id="services"
+            className="text-center"
+            style={{ background: "white" }}
+        >
             <div /* className="container" */>
                 <div
-                    className="section-title"
+                    /* className="section-title" */
                     style={{ margin: "30px 0px", background: "#eff3f3" }}
                 >
                     <h2>WorkShop</h2>
